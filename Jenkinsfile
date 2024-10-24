@@ -6,7 +6,7 @@ pipeline{
   stages{
     stage('Build') {
       steps {
-	sh 'rm -rf *.var'
+	sh 'rm -rf *.war'
         sh 'jar -cvf target/StudentSurvey-1.0-SNAPSHOT.war -C "src/main/webapp" .'     
         sh 'docker build -t rohini44/studentsurvey-app:latest .'
       }
