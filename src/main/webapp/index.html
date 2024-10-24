@@ -1,0 +1,93 @@
+<!--
+    File: index.html
+    Author: Rohini Swathi Bhatlapenumarthi
+    Gnumber: G01452093
+    Description: This is the homepage for the Amazon Web Services (AWS) Training Class, hosted on S3. 
+                 It includes an overview of the training program, a button for enrollment, and a link to the survey hosted on EC2.
+-->
+<html><head>
+<title>Amazon Web Services (AWS) Training Class Homepage</title>
+<style>
+    body {
+        font-family: 'Amazon Ember', Arial, sans-serif;
+        background-color: #232f3e;
+        color: #ffffff;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    header {
+        background-color: #ff9900;
+        color: #232f3e;
+        text-align: center;
+        padding: 20px 0;
+    }
+    h1 {
+        margin: 0;
+    }
+    img {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%;
+        height: auto;
+    }
+    p {
+        background-color: #ffffff;
+        color: #232f3e;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(255,153,0,0.3);
+    }
+    .cta-button {
+        display: inline-block;
+        background-color: #ff9900;
+        color: #232f3e;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+    .cta-button:hover {
+        background-color: #ffac33;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Amazon Web Services (AWS) Training Class</h1>
+        </div>
+    </header>
+    
+    <div class="container">
+        <img src="aws.png" alt="Diagram showing various AWS services and their connections in a cloud architecture" width="800" height="450">
+        
+        <p>
+            Welcome to our Amazon Web Services (AWS) Training Class! This comprehensive program is designed to equip you with the knowledge and skills needed to harness the power of AWS cloud services. Whether you're a beginner looking to start your cloud journey or an experienced professional aiming to enhance your AWS expertise, our course offers valuable insights into cloud computing, serverless architecture, database management, and much more.
+        </p>
+        
+        <p>
+            Throughout this training, you'll gain hands-on experience with core AWS services such as EC2, S3, RDS, Lambda, and CloudFormation. You'll learn how to design scalable, highly available, and fault-tolerant systems while optimizing for cost and performance. Our expert instructors will guide you through real-world scenarios, best practices, and AWS certification preparation.
+        </p>
+        
+        <a href="https://aws-training.websim.io/enrollment" class="cta-button">Enroll Now</a>
+        <a href="http://ec2-3-144-83-122.us-east-2.compute.amazonaws.com/survey.html" class="cta-button">Take the Student Survey</a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctaButton = document.querySelector('.cta-button');
+            ctaButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                alert('Thank you for your interest! Enrollment will open soon. Please check back later.');
+            });
+        });
+    </script>
+</body>
+</html>

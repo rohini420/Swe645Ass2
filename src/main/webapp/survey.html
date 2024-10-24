@@ -1,0 +1,100 @@
+<!--
+   File: survey.html
+   Author: Rohini Swathi Bhatlapenumarthi
+   Gnumber: G01452093
+   Description: This HTML file contains a student survey form allowing users to input their personal details, 
+                select preferences, and provide feedback through various form elements like text boxes, checkboxes, 
+                radio buttons, and a dropdown.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Survey</title>
+</head>
+<body>
+    <h1>Student Survey Form</h1>
+    <form action="" method="post">
+        <!-- Text Boxes -->
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required><br><br>
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required><br><br>
+
+        <label for="street-address">Street Address:</label>
+        <input type="text" id="street-address" name="street-address" required><br><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required><br><br>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required><br><br>
+
+        <label for="zip">Zip Code:</label>
+        <input type="text" id="zip" name="zip" required><br><br>
+
+        <label for="telephone">Telephone:</label>
+        <input type="tel" id="telephone" name="telephone" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="survey-date">Date of Survey:</label>
+        <input type="date" id="survey-date" name="survey-date" required><br><br>
+
+        <!-- Checkboxes -->
+        <p>What did you like most about the campus?</p>
+        <input type="checkbox" id="students" name="likes" value="students">
+        <label for="students">Students</label><br>
+
+        <input type="checkbox" id="location" name="likes" value="location">
+        <label for="location">Location</label><br>
+
+        <input type="checkbox" id="campus" name="likes" value="campus">
+        <label for="campus">Campus</label><br>
+
+        <input type="checkbox" id="atmosphere" name="likes" value="atmosphere">
+        <label for="atmosphere">Atmosphere</label><br>
+
+        <input type="checkbox" id="dorm-rooms" name="likes" value="dorm-rooms">
+        <label for="dorm-rooms">Dorm Rooms</label><br>
+
+        <input type="checkbox" id="sports" name="likes" value="sports">
+        <label for="sports">Sports</label><br><br>
+
+        <!-- Radio Buttons -->
+        <p>How did you become interested in the university?</p>
+        <input type="radio" id="friends" name="interest" value="friends" required>
+        <label for="friends">Friends</label><br>
+
+        <input type="radio" id="television" name="interest" value="television">
+        <label for="television">Television</label><br>
+
+        <input type="radio" id="internet" name="interest" value="internet">
+        <label for="internet">Internet</label><br>
+
+        <input type="radio" id="other" name="interest" value="other">
+        <label for="other">Other</label><br><br>
+
+        <!-- Dropdown List -->
+        <label for="recommend">How likely are you to recommend this school to others?</label>
+        <select id="recommend" name="recommend">
+            <option value="very-likely">Very Likely</option>
+            <option value="likely">Likely</option>
+            <option value="unlikely">Unlikely</option>
+        </select><br><br>
+
+        <!-- Raffle Text Box -->
+        <label for="raffle">Raffle (Enter 10 comma-separated numbers between 1 and 100):</label>
+        <input type="text" id="raffle" name="raffle" required><br><br>
+
+        <!-- Text Area -->
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Submit and Cancel Buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Cancel">
+    </form>
+</body>
+</html>
